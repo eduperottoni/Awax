@@ -76,7 +76,7 @@ header ul.menu-list{
 
 header li.menu-list-item{
     height:100%;
-    padding: 0 5px;
+    padding: 0 10px;
 
     align-items:center;
 }
@@ -98,3 +98,31 @@ header a.menu-list-item-link{
 header a.menu-list-item-link:hover{
     border-bottom:4px solid #fff;
 }
+
+@media screen and (max-width:1460px){
+    .container{
+        width: 85%;
+        max-width: 1200px;
+    }
+    header a.menu-list-item-link{
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .container{
+        width:90%;
+        max-width:900px;
+    }
+}
+
+@media screen and (max-width:950px){
+    .container{
+        width:80%;
+    }
+    header div.menu-area nav.menu{
+        display: none;
+    }
+    /*Fazer posicionamento do menu mobile*/
+}
+
