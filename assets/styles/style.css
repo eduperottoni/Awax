@@ -186,7 +186,7 @@ div.home-pointer{
     align-items: center;
 }
 
-div.home-pointer-point:first-child{
+div.home-pointer-point.active{
     background-color: var(--dourado);
 }
 
