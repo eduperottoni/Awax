@@ -8,6 +8,7 @@
     --dourado:#b28756;
     --hover-gray:#ccc;
     --courtain-black:#000000bb;
+    --section-desc-gray:#a8a8a8;
 }
 
 body{
@@ -228,4 +229,32 @@ div.home-pointer-point{
     /*Fazer posicionamento do menu mobile*/
 }
 
-/*TESTE TESTE TESTE TESTE TESTE*/
+/*SECTIONS*/
+
+section.def-section{
+    text-transform:uppercase;
+    text-align:center;
+    padding: 40px 0;
+}
+
+section.def-section div.container{
+    flex-direction: column;
+}
+
+h3.def-section-title-h3{
+    font-size:1.5rem;
+    margin-bottom:7.5px;
+}
+
+p.def-section-title-desc{
+    font-size:0.75rem;
+    color: var(--section-desc-gray);
+    font-weight: 600;
+}
+
+div.def-section-content{
+    width: 100%;
+    height: 500px;
+    background-color: brown;
+    margin: 30px;
+}
