@@ -153,6 +153,22 @@ div.home-slider-slide-area h2 span{
     color:var(--dourado);
 }
 
+div.home-slider-slide-area h2 span.active{
+    animation: opacitySpan 2s forwards;
+}
+
+@keyframes opacitySpan{
+    0%{
+        opacity: 0%;
+        transform: scale(2);
+    }
+    100%{
+        opacity:100%;
+        transform: scale(3);
+    }
+}
+
+
 div.home-slider-slide-area p{
     font-size:1.25rem;
     font-weight: 600;
