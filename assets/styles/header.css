@@ -1,0 +1,75 @@
+/*HEADER*/
+
+header{
+    width:100%;
+    height: 100px;
+    background-color:#000;
+
+    align-items:center
+}
+
+header div.logo-area, header div.menu-area{
+    align-items:center;
+}
+
+header div.logo-area{
+    width:50px;
+    height: 100%;
+}
+
+header div.logo-area div.logo-img{
+    width:100%;
+    height: 50px;
+    background-color: var(--dourado);
+    border-radius:20px;
+}
+
+header div.menu-area{
+    height: 100%;
+    padding-left:50px;
+
+    flex:1;
+    justify-content: flex-end;
+}
+
+header div.menu-area nav.menu{
+    height: 100%;
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+}
+
+header ul.menu-list{
+    width:100%;
+    height: 100%;
+    list-style:none;
+
+    justify-content: space-around;
+}
+
+header li.menu-list-item{
+    height:100%;
+    padding: 0 10px;
+
+    align-items:center;
+}
+
+header a.menu-list-item-link{
+    width:100%;
+    height:100%;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#fff;
+    font-size: 0.85rem;
+    font-weight: 600;
+
+    align-items: center;
+    justify-content: center;
+}
+
+header a.menu-list-item-link.active, header a.menu-list-item-link:hover{
+    border-bottom: 4px solid var(--dourado);
+    color: var(--hover-gray);
+}
