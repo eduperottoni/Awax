@@ -8,7 +8,6 @@ function changeSlideAuto(){
     let spanActive = document.querySelector('div.home-pointer-point.active')
     let activePosition = points.indexOf(spanActive)
     activePosition == points.length-1 ? activePosition = -1 : 
-    console.log(activePosition)
     removeActiveClass()
     addActiveClass(activePosition+1)
     changeSliderMargin(activePosition+1)
