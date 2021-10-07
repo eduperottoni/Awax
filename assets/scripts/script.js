@@ -1,13 +1,12 @@
 const slider = document.querySelector(".home-slider")
 const points = Array.from(document.getElementsByClassName('home-pointer-point'))
 const slidesSpan = Array.from(document.querySelectorAll('.home-slider-slide-area span'))
-console.log(points)
 
 function changeSlideAuto(){
   setInterval(()=>{
     let spanActive = document.querySelector('div.home-pointer-point.active')
     let activePosition = points.indexOf(spanActive)
-    activePosition == points.length-1 ? activePosition = -1 : 
+    if(activePosition == points.length-1) activePosition = -1 
     removeActiveClass()
     addActiveClass(activePosition+1)
     changeSliderMargin(activePosition+1)
