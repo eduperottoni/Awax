@@ -34,7 +34,10 @@ div.home-slider-slide-area{
 }
 
 div.home-slider-slide-area h2{
+    width: 100%;
+    height: auto;
     font-size:3.5rem;
+    word-wrap: break-word;
 }
 
 div.home-slider-slide-area h2 span{
@@ -106,4 +109,31 @@ div.home-pointer-point{
     margin: 0 5px 0 5px;
     border:2.5px solid var(--dourado);
     cursor:pointer;
+}
+
+@media screen and (max-width:950px){
+    div.home-slider-slide-area h2{
+        font-size:2rem;
+    }
+    div.home-slider-slide-area p{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width:400px){
+    div.home-slider-slide-area h2{
+        font-size:1.5rem;
+    }
+    div.home-slider-slide-area p{
+        font-size: 0.75rem;
+    }  
+}
+
+@media screen and (max-width:250px){
+    div.home-slider-slide-area h2{
+        font-size:1,25rem;
+    }
+    div.home-slider-slide-area p{
+        font-size: 0.75rem;
+    }  
 }
