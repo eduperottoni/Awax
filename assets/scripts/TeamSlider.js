@@ -16,9 +16,10 @@ function setSlide(value){
 }
 
 function slidePass(value){
+    TeamSlider.classList.remove('animation')
     changeActivePoints(value)
     setSlide(value)
-    
+    TeamSlider.classList.add('animation')
 }
 
 function catchSlideWidth(){
@@ -41,11 +42,13 @@ function slidePassAuto(){
     //     teamContentWidth = 840
     // }
     setInterval(()=>{
+        TeamSlider.classList.remove('animation')
         let pointActive = document.querySelector('.team-content-pointer-point.active')
         let c = pointsArray.indexOf(pointActive)+1
         if(c > 8){c = 0}
         slidePass(c)
-
+        TeamSlider.classList.add('animation')
+        
     },6000)
 }
 
